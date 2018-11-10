@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    background-color: darkblue;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+/*CSS LogoName*/
+.logo-name {
+    padding-left: 150px;
+}
+.logo img { width: 100%;}
+.nameApp {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    color:  violet;
+}
+.search {
+    padding-top: 12px;
+}
+.search input {
+    width: 250px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+/*CSS Menu*/
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+}
+.menu ul li a{
+    /*white-space: nowrap;*/
+    padding: 0 10px;
+    color: white;
+    display: block;
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.menu ul li ul {
+    position: absolute;
+    display: none;
+    background-color: whitesmoke;
+    padding-left: 5px;
+    border-radius: 8px;
+}
+.menu ul li ul li{
+    display: block;
+    float: none;
+}
+.menu ul li:hover a{
+    color: darkblue;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+section {
+    padding-top: 60px;
+    background-image: url("https://i.ytimg.com/vi/4l73BmtmIgE/maxresdefault.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+nav {
+    font-family: "Palatino Linotype";
+}
+nav ul li {
+    display: block;
+    margin: 30px 10px;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+/*CSS Main*/
+main{
+    background-color: whitesmoke;
+ }
+.song {
+    margin: 10px;
+    background-color: gray;
+    border-radius: 8px;
+}
+.song:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.song img {
+    width: 100%;
+    border-radius: 10px;
+}
+.song-img {
+    padding-left: 20px;
+    float: left;
+    width: 15% ;
+}
+.song-inf {
+    float: left;
+    width: 50%;
+    padding-top: 26px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
+.song-control {
+    padding-top: 20px;
+    width: 5%;
+    float: left;
+}
+.song-control img {
+    width: 100%;
+}
+/*.song-item {*/
+    /*border: 1px solid rgba(13,23,20,0.2);*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.song-item:after {*/
+    /*content: '';*/
+    /*clear: both;*/
+    /*display: table;*/
+/*}*/
+/*.song-index {*/
+    /*float: left;*/
+    /*width: 5%;*/
+    /*font-size: 30px;*/
+    /*font-weight: bold;*/
+    /*text-align: center;*/
+    /*padding-top: 2%;*/
+    /*padding-left: 1%;*/
+/*}*/
+/*.song-thumbnail {*/
+    /*float: left;*/
+    /*width: 10%;*/
+/*}*/
+/*.song-thumbnail img {*/
+    /*width: 100%;*/
+    /*border-radius: 10px;*/
+/*}*/
+/*.song-infor {*/
+    /*padding-top: 1%;*/
+    /*float: left;*/
+    /*width: 20%;*/
+/*}*/
+/*.song-infor .song-name {*/
+    /*font-weight: bold;*/
+/*}*/
+/*.song-infor .song-singer {*/
+    /*font-weight: lighter;*/
+    /*color: rgba(0,0,23,0.47);*/
+/*}*/
+/*.song-control {*/
+    /*padding-top: 3%;*/
+    /*color: dodgerblue;*/
+    /*cursor: pointer;*/
+    /*text-decoration: underline;*/
+    /*float: left;*/
+    /*width: 10%;*/
+/*}*/
+/*.song-player {*/
+    /*position: relative;*/
+/*}*/
+/*.song-detail {*/
+    /*float: left;*/
+    /*width: 80%;*/
+    /*padding-top: 0.5%;*/
+    /*font-weight: bold;*/
+/*}*/
+/*CSS Aside*/
+aside {
+    background-color: bisque;
+}
+footer {
+    background-color: darkblue;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
